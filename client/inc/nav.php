@@ -7,13 +7,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" <?php if($subTitle == "Home"){echo "active";} ?> href="index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="teams.php">Teams</a>
+                        <a class="nav-link" <?php if($subTitle == "Teams"){echo "active";} ?> href="teams.php">Teams</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="patterns.php">Patterns</a>
+                        <a class="nav-link" <?php if($subTitle == "Patterns"){echo "active";} ?> href="patterns.php">Patterns</a>
                     </li>
                 </ul>
             </div>

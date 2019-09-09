@@ -27,7 +27,7 @@ $(function() {
 function getLeaguesList() {
     let objs;
     //Starts the communication to the server
-    $.getJSON("http://localhost/api/leagues", data => {
+    $.getJSON("http://localhost:8081/api/leagues", data => {
         objs = data;
         $("#leagueList").empty();
         for (let i = 0; i < objs.length; i++) {

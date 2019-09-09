@@ -22,7 +22,7 @@ $(function() {
 
         //Starts the communication to the server
         $.getJSON(
-            "http://localhost/api/leagues",
+            "http://localhost:8081/api/leagues",
             function(data) {
                 orgs = data;
                 //load dropdown lists here
@@ -48,7 +48,7 @@ $(function() {
             let objs;
             //Starts the communication to the server
             $.getJSON(
-                "http://localhost/api/teams/byleague/" + $("#teamChoice").val(),
+                "http://localhost:8081/api/teams/byleague/" + $("#teamChoice").val(),
                 function(data) {
                     objs = data;
                     $("#teamTableHead").empty();
@@ -71,7 +71,7 @@ $(function() {
             let objs;
             //Starts the communication to the server
             $.getJSON(
-                "http://localhost/api/teams",
+                "http://localhost:8081/api/teams",
                 function(data) {
                     objs = data;
                     let chosenCraft = $("#teamType").val();
@@ -103,7 +103,7 @@ $(function() {
             let objs;
             //Starts the communication to the server
             $.getJSON(
-                "http://localhost/api/teams",
+                "http://localhost:8081/api/teams",
                 function(data) {
                     objs = data;
                     $("#teamTableHead").empty();

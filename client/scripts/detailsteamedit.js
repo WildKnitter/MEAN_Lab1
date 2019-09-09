@@ -23,7 +23,7 @@ $(function() {
         //Starts the communication to the server
         //This API gets a particular team by ID, using /api/teams/:id
         $.getJSON(
-                "http://localhost/api/teams/" + chosenDetail,
+                "http://localhost:8081/api/teams/" + chosenDetail,
                 function(data) {
                     obj = data;
 

@@ -21,7 +21,7 @@ $(function() {
 
     //Starts the communication to the server
     $.getJSON(
-        "http://localhost/api/leagues",
+        "http://localhost:8081/api/leagues",
         function(data) {
             orgs = data;
             //load dropdown lists here (code)
@@ -51,7 +51,7 @@ function addNewTeam() {
     }
     //NOTE: the Posting of the new team now includes the Team Id so that the user will
     //be directed back to their new team they just created!
-    $.post("http://localhost/api/teams", $("#detailsInputForm").serialize()) // end of post
+    $.post("http://localhost:8081/api/teams", $("#detailsInputForm").serialize()) // end of post
         .done(function(data) {
             data = JSON.parse(data);
             location.href = "teamdetails.php?teamid=" + data.TeamId;

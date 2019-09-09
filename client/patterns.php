@@ -167,8 +167,8 @@ $subTitle = "Patterns";
         </section>
 
         <!-- Illustrations -->
-        <div id="patternIllustrations" class="row justify-content-md-center">
-            <div class="col-lg-4">
+        <div id="patternIllustrations" class="row">
+            <div class="col-lg-4 offset-md-2">
                 <div id="imgcrochetbabyblanket"></div>
             </div>
             <div class="col-lg-4">

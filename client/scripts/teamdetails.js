@@ -24,7 +24,7 @@ $(function() {
         //Starts the communication to the server
         //This API gets a particular team by ID, using /api/teams/:id
         $.getJSON(
-                "http://localhost/api/teams/" + chosenDetail,
+                "http://localhost:8081/api/teams/" + chosenDetail,
                 //This function doesn't necessarily run instantaneously
                 function(data) {
                     obj = data;
@@ -141,7 +141,7 @@ $(function() {
 
                         function deleteTeam() {
                             $.ajax({
-                                    url: "http://localhost/api/teams/" + chosenDetail,
+                                    url: "http://localhost:8081/api/teams/" + chosenDetail,
                                     type: "DELETE",
                                     data: $("#detailsForm").serialize()
                                 }) // end of AJAX

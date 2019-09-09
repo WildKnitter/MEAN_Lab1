@@ -48,7 +48,7 @@ $(function() {
 //when Unregister button is clicked:
 function unRegisterForTeam() {
     $.ajax({
-            url: "http://localhost/api/teams/" + $("#teamid").val() + "/members/" + $("#memberid").val(),
+            url: "http://localhost:8081/api/teams/" + $("#teamid").val() + "/members/" + $("#memberid").val(),
             type: "DELETE",
             data: $("#unRegisterForm").serialize()
         }) // end of AJAX

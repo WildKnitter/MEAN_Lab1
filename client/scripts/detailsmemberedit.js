@@ -60,7 +60,7 @@ function editTeamMember() {
     }
     // EDIT A Member
     $.ajax({
-            url: "http://localhost/api/teams/" + $("#teamid").val() + "/members", // your api url
+            url: "http://localhost:8081/api/teams/" + $("#teamid").val() + "/members", // your api url
             type: "PUT", // method is any HTTP method
             data: $("#memberDetailsFormEdit").serialize(), // id of your form
         }) // end of AJAX
@@ -77,7 +77,7 @@ function editTeamMember() {
 //when Unregister button is clicked:
 function unRegisterForTeam() {
     $.ajax({
-            url: "http://localhost/api/teams/" + $("#teamid").val() + "/members/" + $("#memberid").val(),
+            url: "http://localhost:8081/api/teams/" + $("#teamid").val() + "/members/" + $("#memberid").val(),
             type: "DELETE",
             data: $("#memberDetailsFormEdit").serialize()
         }) // end of AJAX
